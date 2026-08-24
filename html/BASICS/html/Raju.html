@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Kannaya ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffd6e8, #d9e7ff);
+            text-align: center;
+            overflow-x: hidden;
+            color: #333;
+        }
+
+        /* Main Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.9);
+            padding: 45px 25px;
+            border-radius: 25px;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .cake {
+            font-size: 80px;
+            animation: bounce 1.5s infinite;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #ff4f81;
+            margin: 15px 0;
+        }
+
+        h2 {
+            color: #e90665;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 30px;
+            background: #ff4f81;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+            background: #ff2866;
+        }
+
+        /* Message */
+
+         .message h2 { 
+            text-align: center;
+             color: #ff4f81; 
+            }
+
+        .message {
+            display: none;
+            margin-top: 25px;
+            padding: 25px;
+            background: #fff0f5;
+            border-radius: 20px;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+
+        /* Photos */
+        .photos {
+            padding: 100px 50px;
+        }
+
+        .photos h2 {
+            font-size: 32px;
+            color: #ff094f;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 400px;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: 0.4s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.08) rotate(2deg);
+        }
+        
+        /*Message-Box*/
+        .message {
+          padding: 50px 50px;
+        }
+        
+        .message h2 {
+          color: #ff4f81;
+          font-size: 32px;
+          margin-bottom: 25px;
+        }
+        .messagebox {
+            max-width: 700px;
+            margin: auto;
+            background: rgb(236, 206, 242);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0,1);
+            line-height: 1.8;
+        }
+
+        /* Memories */
+        .memories {
+            padding: 50px 20px;
+        }
+
+        .memories h3 {
+            color: #e90948;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .memory-box {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0,1);
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            padding: 30px;
+            background: #ff4f81;
+            color: white;
+            font-size: 16px;
+        }
+
+        /* Floating Hearts */
+        .heart {
+            position: fixed;
+            bottom: -20px;
+            font-size: 25px;
+            animation: float 1s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes bounce {
+            0%,100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        /* Mobile */
+        @media(max-width:600px) {
+            h1 {
+                font-size: 34px;
+            }
+
+            .cake {
+                font-size: 60px;
+            }
+
+            .gallery img {
+                width: 90%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background Music -->
+<audio id="music" loop>
+    <source src="../../ASSETS/music1.mpeg.mp4" type="audio/mp4">
+</audio>
+
+<!-- Birthday Voice -->
+<audio id="clickAudio">
+    <source src="../../ASSETS/birthday voice 2.aac" type="audio/aac">
+</audio>
+
+    
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="card">
+
+            <div class="cake">🎂</div>
+
+            <h1>Happy Birthday Raju❤️ </h1>
+
+            <h2>To My Best Friend🫂</h2>
+
+            <p class="intro">
+                Today is a very special day because it's the birthday
+                of one of the most amazing person! 🥳
+            </p>
+
+            <button onclick="showSurprise()">
+                🎁 you Deserve This
+            </button>
+
+            <div class="message" id="message">
+
+                <h2>💖 Dear Kannaya 💖</h2>
+
+                <p>
+                    Happiest Birthday to you! 🎂🥳
+                </p>
+
+                <p>
+                    You deserve a life filled with happiness, success, and all the beautiful things you’ve always wished for. I’ll always be cheering for you❤️.because you’ve always been one of the best people in my life. In the world ever makes you feel like you’re not enough, remember that your bestie will always believe in you🫂❤️.every happiness in this world, because you’ve made my world a little happier just by being in it. No matter where life takes us, I’ll always want to see you winning, smiling, and becoming the person you dream of being. ❤️
+
+                </p>
+
+                <p>
+                    Once again...
+                    <br>
+                    <strong>Happy Birthday Kukka! 🎂🎉❤️</strong>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Photos Section -->
+    <section class="photos">
+
+        <h2>📸 Our Memories</h2>
+
+       <div class="gallery">
+            <img src="../../ASSETS/rajuimage5.jpeg" alt="">
+
+            <img src="../../ASSETS/rajuimage8.jpeg" alt="">
+
+            <img src="../../ASSETS/rajuimage2.jpeg" alt="">
+
+            <img src="../../ASSETS/rajuimage3.jpeg" alt="">
+
+            <img src="../../ASSETS/BowBow.jpeg" alt="">
+
+        </div>
+
+    </section>
+
+
+    <!-- Memories Section -->
+    <section class="memories">
+
+        <h2>⭐🙊 To My Partner in Crime😎 🙊⭐</h2>
+
+        <div class="messagebox">
+
+           <p>
+            Kannaya❤️...
+
+I just wanted to tell you something. We may not always say everything we feel, but I really want you to know how special you are to me.
+
+Having a best friend like you in my life is honestly one of the best things that happened to me. From our silly conversations and stupid jokes to the serious talks and the moments when we simply stayed there for each other. every memory with you is special to me. 🫶🏻
+
+You are one of those people with whom I can be completely myself without worrying about being judged. I can share my happiness, my problems, my random thoughts, and even my nonsense with you 😂. And somehow, you always make things feel a little better.
+
+Sometimes I may irritate you, tease you, fight with you, or even disappear for some time 😅, but please never think that our friendship means any less to me. You are genuinely important to me, and I’ll always be grateful that life gave me a friend like you.
+
+I hope you achieve everything you dream about. I hope you become successful, happy, and proud of yourself. And whenever life gets difficult, I hope you remember that there is always someone cheering for you and wishing the best for you. ❤️
+
+Thank you for being there during the good days and the bad days. Thank you for listening to my endless talks, tolerating my mood swings, making me laugh, and simply being YOU.
+
+I don't know what the future will look like or where life will take us, but I really hope our friendship stays the same. Even if we get busy, even if we don't talk every day, I hope we'll always have that same comfort and understanding between us.
+
+And one more thing… don't change yourself just to impress people. Stay the same genuine, crazy, kind-hearted person you are. The people who truly know you will always appreciate you. ❤️
+
+On your special day, I just want to say.
+
+**Happy Birthday, Kannaya! 🎂🥳❤️**
+
+May this year bring you lots of happiness, success, good health, unforgettable memories, and everything your heart wishes for.
+
+Keep smiling. Keep shining. Keep annoying me 😂.
+
+And most importantly, never forget that you have a bestie who will always be proud of you and will always wish the best for you. 🫂❤️
+
+**Happy Birthday once again, my bestie! 🎉🎂**
+
+Here’s to our friendship, our crazy memories, our endless conversations, and many more years of friendship. 🥹❤️
+
+**Stay blessed, Kannaya. You’re truly special 🫶🏻.MISS YOU SO MUCH 😥.
+           </p>
+
+        </div>
+
+        <h3>✨ Little Memories ✨</h3>
+
+        <div class="memory-box">
+
+            <p>
+                Some friendships are not about how long you know someone,
+                but about how special they make your life feel. ❤️
+            </p>
+
+            <br>
+
+            <p>
+                From silly conversations to unforgettable moments,
+                every memory with you is special.
+            </p>
+
+            <br>
+
+            <p>
+                Here's to many more laughs, adventures and memories
+                together!🫂🥳
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        Made With ❤️ Specially For You🫂
+
+        <br><br>
+
+        🎂 Happy Birthday Once Again! 🎉
+
+    </footer>
+
+
+    <script>
+
+
+        function showSurprise() {
+
+    // Show birthday message
+    document.getElementById("message").style.display = "block";
+
+    // Play background music
+    let music = document.getElementById("music");
+    music.volume = 0.3;
+
+    music.play().catch(function() {
+        console.log("Music requires user interaction.");
+    });
+
+    // Play birthday voice
+    let voice = document.getElementById("clickAudio");
+
+    voice.volume = 1.0;
+    voice.currentTime = 0;
+    voice.play();
+
+    voice.play().catch(function(error) {
+        console.log("Voice error:", error);
+    });
+
+    // Create hearts
+    for (let i = 0; i < 30; i++) {
+
+        let heart = document.createElement("div");
+
+        heart.className = "heart";
+        heart.innerHTML = "❤️";
+
+        heart.style.left = Math.random() * 100 + "vw";
+
+        heart.style.animationDuration =
+            (3 + Math.random() * 4) + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 7000);
+    }
+
+    // Confetti effect
+    for (let i = 0; i < 50; i++) {
+
+        let confetti = document.createElement("div");
+
+        confetti.innerHTML = "❤️";
+
+        confetti.style.position = "fixed";
+        confetti.style.left = Math.random() * 100 + "vw";
+        confetti.style.top = "-20px";
+        confetti.style.fontSize = "25px";
+        confetti.style.zIndex = "1000";
+
+        document.body.appendChild(confetti);
+
+        let fall = confetti.animate(
+            [
+                { transform: "translateY(0) rotate(0deg)" },
+                { transform: "translateY(100vh) rotate(720deg)" }
+            ],
+            {
+                duration: 3000 + Math.random() * 2000,
+                easing: "linear"
+            }
+        );
+
+        fall.onfinish = () => confetti.remove();
+    }
+}
+
+        /* FLOATING HEARTS */
+
+        function createHeart() {
+
+            let heart =
+                document.createElement("div");
+
+            heart.className = "heart";
+
+            heart.innerHTML =
+                ["❤️", "💙", "💖", "💕", "🥰","🎈","🧡","❤️", "💙", "💖", "💕", "🥰","❤️","🧡","💙", "💖", "💕", "🥰","🎈","❤️", "💙", "💖", "💕", "🥰","🎈"]
+                [Math.floor(Math.random() * 20)];
+
+            heart.style.left =
+                Math.random() * 100 + "vw";
+
+            heart.style.animationDuration =
+                (3 + Math.random() * 3) + "s";
+
+            document.body.appendChild(heart);
+
+
+            setTimeout(function() {
+
+                heart.remove();
+
+            }, 6000);
+
+        }
+
+
+        setInterval(createHeart, 800);
+
+    </script>
+
+</body>
+</html>

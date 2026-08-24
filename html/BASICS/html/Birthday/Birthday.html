@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Kannaya 🎂</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: linear-gradient(
+                135deg,
+                #020817,
+                #06245a,
+                #0b4d8c
+            );
+
+            font-family: Arial, sans-serif;
+
+            overflow-x: hidden;
+        }
+
+        /* MAIN CONTAINER */
+
+        .container {
+            width: 900px;
+            max-width: 95%;
+
+            display: flex;
+
+            gap: 25px;
+
+            justify-content: center;
+            align-items: center;
+
+            padding: 25px;
+        }
+
+        /* LEFT CARD */
+
+        .card1 {
+            width: 400px;
+            min-height: 600px;
+
+            padding: 30px 25px;
+
+            text-align: center;
+
+            background: linear-gradient(
+                180deg,
+                #062b64,
+                #083d83
+            );
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 10px 40px rgba(0,0,0,0.4);
+        }
+
+        .balloon {
+            font-size: 35px;
+
+            margin-bottom: 15px;
+
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+        }
+
+        .card1 h1 {
+
+            color: #f6bd35;
+
+            font-size: 38px;
+
+            margin-bottom: 25px;
+
+            line-height: 1.2;
+        }
+
+        .card1 h3 {
+
+            color: white;
+
+            margin-bottom: 30px;
+
+            font-size: 20px;
+        }
+
+        /* PHOTO */
+
+        .photo {
+
+            width: 310px;
+
+            height: 340px;
+
+            object-fit: cover;
+
+            border: 7px solid white;
+
+            border-radius: 12px;
+
+            display: block;
+
+            margin: auto;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.4);
+        }
+
+        .card1 h4 {
+
+            color: white;
+
+            font-size: 17px;
+
+            margin-top: 25px;
+        }
+
+        .adventures {
+
+            color: #ffd447;
+
+            margin-top: 20px;
+
+            font-size: 17px;
+
+        }
+
+        /* RIGHT CARD */
+
+        .card2 {
+
+            width: 400px;
+            min-height: 600px;
+
+            padding: 30px;
+
+            background: #f8f7f3;
+
+            color: #333;
+
+            border-radius: 20px;
+
+            text-align: center;
+
+            box-shadow:
+                0 10px 40px rgba(0,0,0,0.4);
+        }
+
+        .card2 h2 {
+
+            font-size: 25px;
+
+            margin-bottom: 15px;
+
+            color: #222;
+        }
+
+        .emoji {
+
+            font-size: 25px;
+
+            margin-bottom: 15px;
+        }
+
+        .message {
+
+            font-size: 16px;
+
+            line-height: 1.75;
+
+            margin-bottom: 25px;
+        }
+
+        /* BUTTON */
+
+        .btn {
+
+            padding: 13px 20px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background: #66b5d9;
+
+            color: white;
+
+            font-size: 15px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+
+            transform: scale(1.05);
+
+            background: #3c9dcc;
+        }
+
+        .tag {
+
+            margin-top: 25px;
+
+            font-weight: bold;
+
+        }
+
+        /* MOBILE */
+
+        @media(max-width: 750px) {
+
+            body {
+                align-items: flex-start;
+            }
+
+            .container {
+
+                flex-direction: column;
+
+                padding: 20px 10px;
+            }
+
+            .card1,
+            .card2 {
+
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .card1 h1 {
+
+                font-size: 32px;
+            }
+
+            .photo {
+
+                width: 280px;
+                height: 250px;
+            }
+        }
+
+        /* HEART ANIMATION */
+
+        .heart {
+
+            position: fixed;
+
+            bottom: -30px;
+
+            font-size: 25px;
+
+            animation: heartUp 5s linear forwards;
+
+            pointer-events: none;
+        }
+
+        @keyframes heartUp {
+
+            from {
+
+                transform: translateY(0);
+
+                opacity: 1;
+            }
+
+            to {
+
+                transform: translateY(-100vh);
+
+                opacity: 0;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="container">
+
+
+        <!-- LEFT CARD -->
+
+        <div class="card1">
+
+            <div class="balloon">
+                🎈 🎉 🎈
+            </div>
+
+            <h1>
+                Happy Birthday<br>
+                Kannaya
+            </h1>
+
+            <h3>
+                To My Best Friend
+            </h3>
+
+
+            <!-- IMPORTANT IMAGE LINE -->
+
+            <img
+    src="../../../ASSETS/BowBow.jpeg"
+    class="photo"
+    alt="Best Friends"
+>
+
+
+            <h4>
+                Amazing Bestie♥️
+            </h4>
+
+            <h4 class="adventures">
+                ⭐ Many More Adventures Together ⭐
+            </h4>
+
+        </div>
+
+
+
+        <!-- RIGHT CARD -->
+
+        <div class="card2">
+
+            <h2>
+                🎁 Happy Birthday Kannaya
+            </h2>
+
+            <div class="emoji">
+                🥂
+            </div>
+
+
+            <p class="message">
+
+                Happy Birthday to my best friend ❤️
+                You are not just a friend, you are one of
+                the most special people in my life 🥰.
+
+                Thank you for standing by me, understanding me,
+                and creating beautiful memories with me.
+
+                I'm lucky to have you ♾️.
+
+                Stay happy always 😊.
+
+                You are the person who knows my smile,
+                my silence, and my feelings without me
+                saying anything.
+
+                Thank you for always being there for me 🥰.
+
+                I'm truly grateful to have a best friend like you.
+
+                Wishing you happiness, love and success in life ❤️.
+
+                No matter where life takes us,
+                our friendship will always stay special to me 🫶.
+
+                Thank you for being part of my happiest moments
+                and my toughest days 🤍.
+
+                Wishing you endless happiness and success 💙.
+
+            </p>
+
+
+            <button
+                class="btn"
+                onclick="birthdaySurprise()">
+
+                You Deserve The Best 💙
+
+            </button>
+
+
+            <div class="tag">
+
+                #BestFriendsForever ♾️
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+        /* BUTTON */
+
+        function birthdaySurprise() {
+
+            alert(
+                "🎉 Happy Birthday Kannaya! 🎂\n\n" +
+                "You are one of the most special people in my life ❤️\n\n" +
+                "Stay happy and keep smiling always 😊\n\n" +
+                "Wishing you a wonderful year ahead! ✨"
+            );
+
+        }
+
+
+        /* FLOATING HEARTS */
+
+        function createHeart() {
+
+            let heart =
+                document.createElement("div");
+
+            heart.className = "heart";
+
+            heart.innerHTML =
+                ["❤️", "💙", "💖", "💕", "🥰"]
+                [Math.floor(Math.random() * 5)];
+
+            heart.style.left =
+                Math.random() * 100 + "vw";
+
+            heart.style.animationDuration =
+                (3 + Math.random() * 3) + "s";
+
+            document.body.appendChild(heart);
+
+
+            setTimeout(function() {
+
+                heart.remove();
+
+            }, 6000);
+
+        }
+
+
+        setInterval(createHeart, 800);
+
+    </script>
+
+
+</body>
+
+</html>
